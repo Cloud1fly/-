@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/swaggo/gin-swagger"
+	ginSwagger "github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 
 	"github.com/gin-contrib/pprof"
@@ -51,7 +51,7 @@ func SetupRouter(mode string) *gin.Engine {
 	v1.GET("/community", controller.CommunityHandler)           // 获取分类社区列表
 	v1.GET("/community/:id", controller.CommunityDetailHandler) // 根据ID查找社区详情
 	// Github热榜
-	v1.GET("/github_trending", controller.GithubTrendingHandler) // Github热榜
+	// v1.GET("/github_trending", controller.GithubTrendingHandler) // Github热榜
 
 	// 中间件
 	v1.Use(middlewares.JWTAuthMiddleware()) // 应用JWT认证中间件

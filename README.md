@@ -148,14 +148,14 @@
 # 项目环境
 ## github
 
-远程连接url：git@github.com:Cloud1fly/bluebell.git
+远程连接url：git@github.com:Cloud1fly/bluebell-blog-forum.git
 
 在linux下将本地代码提交至github上:
 ```
 1. 生成秘钥：ssh-keygen -t rsa -C "XXX@163.com"
 2. 查看密钥路径： cat ~/.ssh/id_rsa.pub
 3. SSH keys添加到github上
-4. 本地克隆仓库： git clone git@github.com:Cloud1fly/bluebell.git
+4. 本地克隆仓库： git@github.com:Cloud1fly/bluebell-blog-forum.git
 ```
 
 git提交代码到github：

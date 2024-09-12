@@ -437,13 +437,6 @@
                     attrs: {
                         language: "all"
                     }
-                })], 1), s("div", {
-                    staticClass: "github-golang-project-card-container"
-                }, [s("GithubProjectCard", {
-                    attrs: {
-                        language: "golang",
-                        title: "Golang热门项目排行榜"
-                    }
                 })], 1)])])])
             },
             D = [],
@@ -785,48 +778,48 @@
             X = [],
             K = (s("ddb0"), {
                 name: "GithubProjectCard",
-                props: {
-                    title: {
-                        type: String,
-                        require: !0,
-                        default: "Github热门项目排行榜"
-                    },
-                    language: {
-                        type: String,
-                        require: !0,
-                        default: "all"
-                    },
-                    sortType: {
-                        type: String,
-                        require: !0,
-                        default: "desc"
-                    },
-                    pageSize: {
-                        type: Number,
-                        require: !0,
-                        default: 3
-                    }
-                },
-                data() {
-                    return {
-                        pageNumber: 1,
-                        projectList: [],
-                        tagColors: {
-                            typeScript: "#3178c6",
-                            javaScript: "#f1e05a",
-                            html: "#e34c26",
-                            css: "#563d7c",
-                            java: "orange",
-                            python: "#3572A5",
-                            golang: "#00ADD8",
-                            go: "#00ADD8",
-                            shell: "#89e051",
-                            "c++": "#f34b7d",
-                            other: "#ededed"
-                        },
-                        loading: ""
-                    }
-                },
+                // props: {
+                //     title: {
+                //         type: String,
+                //         require: !0,
+                //         //default: "Github热门项目排行榜"
+                //     },
+                //     language: {
+                //         type: String,
+                //         require: !0,
+                //         default: "all"
+                //     },
+                //     sortType: {
+                //         type: String,
+                //         require: !0,
+                //         default: "desc"
+                //     },
+                //     pageSize: {
+                //         type: Number,
+                //         require: !0,
+                //         default: 3
+                //     }
+                // },
+                // data() {
+                //     return {
+                //         pageNumber: 1,
+                //         projectList: [],
+                //         tagColors: {
+                //             typeScript: "#3178c6",
+                //             javaScript: "#f1e05a",
+                //             html: "#e34c26",
+                //             css: "#563d7c",
+                //             java: "orange",
+                //             python: "#3572A5",
+                //             golang: "#00ADD8",
+                //             go: "#00ADD8",
+                //             shell: "#89e051",
+                //             "c++": "#f34b7d",
+                //             other: "#ededed"
+                //         },
+                //         loading: ""
+                //     }
+                // },
                 created() {
                     this.getProject()
                 },

@@ -55,12 +55,6 @@
         <div class="run-time-container">
           <TimeMeter></TimeMeter>
         </div>
-        <div class="github-project-card-container">
-          <GithubProjectCard language="all"></GithubProjectCard>
-        </div>
-        <div class="github-golang-project-card-container">
-          <GithubProjectCard language="golang" title="Golang热门项目排行榜"></GithubProjectCard>
-        </div>
       </div>
     </div>
   </div>
