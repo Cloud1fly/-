@@ -8,11 +8,9 @@
 6. 令牌桶限流
 7. Go语言操作MySQL **(sqlx)**
 8. Go语言操作Redis **(go-redis)**
-10. Gihub热榜
-12. Docker部署
-13. Vue框架
-14. ElementUI
-15. axios 
+9. Vue框架
+10. ElementUI
+11. axios 
 
 # 项目目录结构
 ## 后端结构树
